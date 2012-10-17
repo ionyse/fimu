@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Test! </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<!-- Bootstrap -->
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" HREF="static/css/styles.css">
+	<script src="static/js/jquery.js"></script> 
+	<script src="static/js/bootstrap.js"></script>   
+	<script src="static/js/bootstrap.min.js"></script>   
+	<script type="text/javascript" language="javascript" > 
+	   $(document).ready(function () { 
+			 $('.dropdown-toggle').dropdown(); 
+	   });  
+	</script>
+</head>
+<body>
+<div class="container">
+	<div class="container">
+		<p align="center">
+			<a href=""><img src="static/img/Header_FIMU_2012.jpg" class="img-rounded"></a>
+		</p>
+		<div class="navbar" id="menu">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li ><a href="#">Accueil</a></a></li>
+					<li class="active"><a href="#">Groupe</a></li>
+					<li><a href="#">Menu n°2</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Menu déroulant
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sous-menu n°1</a></li>
+							<li><a href="#">Sous-menu n°2</a></li>
+							<li><a href="#">Sous-menu n°3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	<!--  le titre	-->	
+	<h2 id="titreGroupe">Les groupes</h2>
+	
+	<!--  le recherche	-->
+	<table id="tableauRechercheGroupe">
+		<tbody>
+			<tr>				
+				<td class="span3" id="rechercheDebut">
+					<select id="arrondi">
+						<option>---------- Par Genre ----------</option>
+						<option>Musiques actuelles</option>
+						<option>Musique classique</option>
+						<option>Autres formations</option>
+					</select>
+				<td>
+				<td class="span3">
+					<select id="arrondi">
+						<option>---------- Par Pays ----------</option>
+						<option>Chine</option>
+						<option>France</option>
+					</select>
+				<td>
+				<td class="span5">
+					<input class="input-xlarge" type="text" placeholder="Le nom du groupe"  id="arrondi">
+				<td>
+				<td class="span2">
+					<button class="btn  btn-info pull-right">Recherche</button>
+				<td>
+			</tr>
+		</tbody>
+	
+	</table>
+	
+	<!--  le tableau	-->
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th class="span6"><big>Nom du groupe</big><th>
+					<th class="span3"><big>Genre de musique</big><th>
+					<th class="span3"><big>Pays</big><th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7TH NEMESIS<td>
+					<td>
+						<span class="label">Musiques actuelles</span>
+					<td>
+					<td>France<td>
+				</tr>
+				<tr>
+					<td>AMALGAM NKO<td>
+					<td>
+						<span class="label label-warning">Autres formations</span>
+					<td>
+					<td>France<td>
+				</tr>
+				<tr>
+					<td>CLASSE DE TROMBONES DE BELFORT/EJCM (Delémont)<td>
+					<td>
+						<span class="label label-info">Musique classique</span>
+					<td>
+					<td>France<td>
+				</tr>
+				<tr>
+					<td>BIG BEARS<td>
+					<td>
+						<span class="label">Musiques actuelles</span>
+					<td>
+					<td>France<td>
+				</tr>
+				<tr>
+					<td>CATFISH<td>
+					<td>
+						<span class="label">Musiques actuelles</span>
+					<td>
+					<td>France<td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+	</div>
+			
+	
+	
+	
+	<div class="container" id="footer">
+		<p> Info | Numero tel | contact mail | etc... </p>
+	</div>
+</div>
+</body>
+</html>

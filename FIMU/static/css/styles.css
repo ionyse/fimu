@@ -1,0 +1,90 @@
+body {
+	background-color: #b6df6a;
+}
+
+#footer {
+	/*position: absolute;
+	bottom: 0;*/
+	text-align: center;
+	padding-top: 15px;
+}
+
+#module {
+	text-align: center;
+	background-color: #F3F3F3;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #777;
+}
+
+#menu {
+	padding-top : 10px;
+}
+
+/* ---------- Pour la page "Programmation" -------------- */
+#thead {
+	width: 20%;
+	float: left;
+}
+
+#scrolling {
+	width: 80%;
+	overflow-x:scroll;
+}
+
+#prog {
+	background:white;
+}
+
+#extd {
+	position: relative;
+	float: left;
+	width: 16%; /*(20% (5 cases pas lignes), de 80% (la taille du tableau)*/
+	height: 20px;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.text {	
+	position: absolute;
+	background: white;
+	overflow: visible;
+	padding: 0 5px;
+}
+.front {
+	position: relative;
+	z-index: 100;
+}
+
+/**************
+	Groupes
+**************/
+
+#arrondi{
+	border-radius: 7px;
+}
+
+#titreGroupe{
+	padding-bottom: 8px;
+}
+
+#tableauRechercheGroupe{
+	margin-bottom : 10px;
+	text-align: center;
+	background-color: #a3cf62;
+	border-radius: 7px;
+}
+
+#tableauRechercheGroupe td{
+	padding-top : 10px;
+}
+
+#tableauRechercheGroupe td.span2{
+	padding-top : 2px;
+	padding-right : 8px;
+}
+
+#tableauRechercheGroupe td#rechercheDebut{
+	padding-left : 8px;
+}
