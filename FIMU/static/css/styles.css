@@ -29,7 +29,8 @@ body {
 }
 
 #tableconcerts {
-	width: 280%;
+	width: 2100px;
+	table-layout: fixed
 	/*float: left;*/
 }
 
@@ -42,28 +43,29 @@ body {
 	background:white;
 }
 
-#tableconcerts td {
-	position: relative;
+#tableconcerts th, #tableconcerts td  {
 	float: left;
 	width: 70px;
 	height: 30px;
-	overflow: visible;
-	/*white-space: nowrap;*/
+	text-align: center;
+	/*overflow: visible;
+	white-space: nowrap;*/
 }
 
 #tablescenes td {
 	height: 30px;
 }
 
-.text {	
-	position: absolute;
-	background: white;
-	overflow: visible;
-	padding: 0 5px;
+#tableconcerts td.colspan2 {
+	width: 157px;				/*  taille_cellule*2 + 1*17 */
 }
-.front {
-	position: relative;
-	z-index: 100;
+
+#tableconcerts td.colspan3 {
+	width: 244px;				/*  taille_cellule*3 + 2*17 */
+}
+
+#tableconcerts td.colspan4 {
+	width: 331px;				/*  taille_cellule*4 + 3*17 */
 }
 
 /**************
