@@ -23,9 +23,14 @@ body {
 }
 
 /* ---------- Pour la page "Programmation" -------------- */
-#thead {
+#tablescenes {
 	width: 20%;
 	float: left;
+}
+
+#tableconcerts {
+	width: 280%;
+	/*float: left;*/
 }
 
 #scrolling {
@@ -37,13 +42,17 @@ body {
 	background:white;
 }
 
-#extd {
+#tableconcerts td {
 	position: relative;
 	float: left;
-	width: 16%; /*(20% (5 cases pas lignes), de 80% (la taille du tableau)*/
-	height: 20px;
+	width: 70px;
+	height: 30px;
 	overflow: visible;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
+}
+
+#tablescenes td {
+	height: 30px;
 }
 
 .text {	
