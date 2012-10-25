@@ -6,6 +6,8 @@
 	<!-- Bootstrap -->
 	<link href="static/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" HREF="static/css\styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <script src="static/js/jquery.js"></script>
@@ -21,17 +23,35 @@
 <div class="container">
 	<div class="container">
 		<p align="center">
-			<a href=""><img src="static/img/Header_FIMU_2012.jpg" class="img-rounded"></a>
+			<a href=""><img src="static/img/Header_FIMU_2013.jpg" class="img-rounded"></a>
 		</p>
 		<div class="navbar" id="menu">
 			<div class="navbar-inner">
-				<ul class="nav">
-					<li class="active"><a href="#">Accueil</a></a></li>
-					<li><a href="#">Menu n°1</a></li>
-					<li><a href="#">Menu n°2</a></li>
+				<!-- pour l'ordi -->
+				<ul class="nav hidden-phone">
+					<li><a href="javascript:window.location.href='accueil.html'">Accueil</a></a></li>
+					<li><a href="javascript:window.location.href='groupes.html'">Groupe</a></li>
+					<li class="active"><a href="javascript:window.location.href='programmation.html'">Planning</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" role="menu" data-toggle="dropdown">
 						Menu déroulant
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sous-menu n°1</a></li>
+							<li><a href="#">Sous-menu n°2</a></li>
+							<li><a href="#">Sous-menu n°3</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- pour mobile -->
+				<ul class="nav visible-phone">
+					<li><a href="javascript:window.location.href='accueil.html'">Accueil</a></a></li>
+					<li><a href="javascript:window.location.href='groupes.html'">Groupe</a></li>
+					<li class="active"><a href="javascript:window.location.href='programmation.html'">Planning</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" role="menu" data-toggle="dropdown">
+						Déroulant
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
@@ -97,8 +117,8 @@
 					<tr>
 						<td>Moi</td>
 						<td class="colspan2">j'aime les</td>
-						<td class="colspan3">gateaux au chocolat</td>
-						<td class="colspan4">gateaux au chocolat</td>
+						<td class="colspan3">gateaux au chocolat,</td>
+						<td class="colspan4">et les oursons à la guimauve,</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>

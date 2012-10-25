@@ -1,6 +1,8 @@
 body {
 	background-color: #b6df6a;
+	padding-top:10px;
 }
+
 
 #footer {
 	/*position: absolute;
@@ -21,8 +23,46 @@ body {
 #menu {
 	padding-top : 10px;
 }
+#menu.navbar{
+	padding: 0px 0px 0px 0px;
+}
 
-/* ---------- Pour la page "Programmation" -------------- */
+h4{
+	line-height:0px;
+}
+
+p.text{
+	text-align: justify;
+}
+
+.link{
+	float: left;
+	padding-top:10px;
+}
+
+.link.visible-phone{
+	width:100%;
+	text-align:center;
+}
+
+p.link.visible-phone{
+	text-align:center;
+}
+
+.link.visible-phone button{
+	padding:0px 0px 0px 0px;
+	line-height: 40px;
+	width:100px;
+	margin-right: 10px;
+}
+
+.nav.visible-phone a{
+	font-size: 10px;
+	line-height:30px;
+	padding: 7px 3px 7px 3px !important;
+}
+
+/* ---------- Pour la page "Planning" -------------- */
 #tablescenes {
 	width: 20%;
 	float: left;
@@ -30,7 +70,8 @@ body {
 
 #tableconcerts {
 	width: 2100px;
-	table-layout: fixed
+	max-width: 2100px;
+	/*table-layout: fixed*/
 	/*float: left;*/
 }
 
@@ -52,8 +93,9 @@ body {
 	white-space: nowrap;*/
 }
 
-#tablescenes td {
+#tablescenes td{
 	height: 30px;
+	line-height: 30px;
 }
 
 #tableconcerts td.colspan2 {
@@ -98,4 +140,13 @@ body {
 
 #tableauRechercheGroupe td#rechercheDebut{
 	padding-left : 8px;
+}
+
+#tableauRechercheGroupe.visible-phone td{
+	padding-top : 5px;
+}
+
+#tableauRechercheGroupe.visible-phone input,select{
+	margin-bottom : 5px;
+	width: 100%;
 }

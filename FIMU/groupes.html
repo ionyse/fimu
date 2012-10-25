@@ -14,22 +14,42 @@
 			 $('.dropdown-toggle').dropdown(); 
 	   });  
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
 	<div class="container">
 		<p align="center">
-			<a href=""><img src="static/img/Header_FIMU_2012.jpg" class="img-rounded"></a>
+			<a href=""><img src="static/img/Header_FIMU_2013.jpg" class="img-rounded"></a>
 		</p>
 		<div class="navbar" id="menu">
 			<div class="navbar-inner">
-				<ul class="nav">
-					<li ><a href="#">Accueil</a></a></li>
-					<li class="active"><a href="#">Groupe</a></li>
-					<li><a href="#">Menu n°2</a></li>
+				<!-- pour l'ordi -->
+				<ul class="nav hidden-phone">
+					<li><a href="javascript:window.location.href='accueil.html'">Accueil</a></a></li>
+					<li class="active"><a href="javascript:window.location.href='groupes.html'">Groupe</a></li>
+					<li><a href="javascript:window.location.href='programmation.html'">Planning</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="#" class="dropdown-toggle" role="menu" data-toggle="dropdown">
 						Menu déroulant
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sous-menu n°1</a></li>
+							<li><a href="#">Sous-menu n°2</a></li>
+							<li><a href="#">Sous-menu n°3</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- pour mobile -->
+				<ul class="nav visible-phone">
+					<li><a href="javascript:window.location.href='accueil.html'">Accueil</a></a></li>
+					<li class="active"><a href="javascript:window.location.href='groupes.html'">Groupe</a></li>
+					<li><a href="javascript:window.location.href='programmation.html'">Planning</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" role="menu" data-toggle="dropdown">
+						Déroulant
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
@@ -43,10 +63,14 @@
 		</div>
 		
 	<!--  le titre	-->	
-	<h2 id="titreGroupe">Les groupes</h2>
+	<!--  Pour ordi	-->	
+	<h2 class="hidden-phone" id="titreGroupe">Les groupes</h2>
+	<!--  Pour mobile	-->	
+	<h4 class="visible-phone" id="titreGroupe">Les groupes</h4>
 	
 	<!--  le recherche	-->
-	<table id="tableauRechercheGroupe">
+	<!--  Pour ordi	-->	
+	<table class="hidden-phone" id="tableauRechercheGroupe">
 		<tbody>
 			<tr>				
 				<td class="span3" id="rechercheDebut">
@@ -72,7 +96,37 @@
 				<td>
 			</tr>
 		</tbody>
+	</table>
 	
+	<!--  Pour mobile	-->
+	<table class="visible-phone" id="tableauRechercheGroupe">
+		<tbody>
+			<tr>				
+				<td>
+					<select id="arrondi">
+						<option>--- Par Genre ---</option>
+						<option>Musiques actuelles</option>
+						<option>Musique classique</option>
+						<option>Autres formations</option>
+					</select>
+				<td>
+				<td>
+					<select id="arrondi">
+						<option>--- Par Pays ---</option>
+						<option>Chine</option>
+						<option>France</option>
+					</select>
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<input class="input-xlarge" type="text" placeholder="Le nom du groupe"  id="arrondi">
+				<td>
+				<td>
+					<button class="btn  btn-info pull-right">Recherche</button>
+				<td>
+			</tr>
+		</tbody>
 	</table>
 	
 	<!--  le tableau	-->
