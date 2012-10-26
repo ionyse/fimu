@@ -1,26 +1,28 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title>Accueil</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-	<!-- Bootstrap -->
-	<link href="static/css/bootstrap.min.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" HREF="static/css/styles.css">
+{% extends "themes/html5.html" %}
+{% load static from staticfiles %}
 
-<script src="static/js/jquery.js"></script>
-<script src="static/js/bootstrap.js"></script>  
-<script src="static/js/bootstrap.min.js"></script>  
+{% block theme-design-css %}
+	<!-- Bootstrap -->
+	<link href="{% static 'themes/fimu/default/css/bootstrap.min.css' %}" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static 'themes/fimu/default/css/bootstrap-responsive.css' %}" rel="stylesheet">
+    <!-- Theme -->
+	<link rel="stylesheet" type="text/css" HREF="{% static 'themes/fimu/default/css/styles.css' %}">
+{% endblock %}
+
+{% block theme-design-js %}
+
+<script src="{% static 'themes/fimu/default/js/jquery.js' %}"></script>
+<script src="{% static 'themes/fimu/default/js/bootstrap.js' %}"></script>  
+<script src="{% static 'themes/fimu/default/js/bootstrap.min.js' %}"></script>  
 <script type="text/javascript" language="javascript" >
     $(document).ready(function () {
           $('.dropdown-toggle').dropdown();
     }); 
  </script>
 
-</head>
-
-<body>
+{% endblock %}
+{% block body %}
 <div class="container">
 	<div class="container">
 		<p align="center">
@@ -105,5 +107,4 @@
 		<p> Info | Numero tel | contact mail | etc... </p>
 	</div>
 </div>
-</body>
-</html>
+{% endblock %}
