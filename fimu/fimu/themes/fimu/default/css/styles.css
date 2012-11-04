@@ -1,0 +1,152 @@
+body {
+	background-color: #b6df6a;
+	padding-top:10px;
+}
+
+
+#footer {
+	/*position: absolute;
+	bottom: 0;*/
+	text-align: center;
+	padding-top: 15px;
+}
+
+#module {
+	text-align: center;
+	background-color: #F3F3F3;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #777;
+}
+
+#menu {
+	padding-top : 10px;
+}
+#menu.navbar{
+	padding: 0px 0px 0px 0px;
+}
+
+h4{
+	line-height:0px;
+}
+
+p.text{
+	text-align: justify;
+}
+
+.link{
+	float: left;
+	padding-top:10px;
+}
+
+.link.visible-phone{
+	width:100%;
+	text-align:center;
+}
+
+p.link.visible-phone{
+	text-align:center;
+}
+
+.link.visible-phone button{
+	padding:0px 0px 0px 0px;
+	line-height: 40px;
+	width:100px;
+	margin-right: 10px;
+}
+
+.nav.visible-phone a{
+	font-size: 10px;
+	line-height:30px;
+	padding: 7px 3px 7px 3px !important;
+}
+
+/* ---------- Pour la page "Planning" -------------- */
+#tablescenes {
+	width: 20% !important;
+	max-width: 20% !important;
+	float: left;
+}
+
+#tableconcerts {
+	width: 2100px;
+	max-width: 2100px;
+}
+
+#scrolling {
+	width: 80% !important;
+	max-width: 80% !important;
+	overflow-x:scroll;
+}
+
+#prog {
+	background:white;
+}
+
+#tableconcerts th, #tableconcerts td  {
+	float: left;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	/*overflow: visible;
+	white-space: nowrap;*/
+}
+
+#tablescenes td{
+	height: 30px;
+	line-height: 30px;
+}
+
+#tableconcerts td.colspan2 {
+	width: 157px;				/*  taille_cellule*2 + 1*17 */
+}
+
+#tableconcerts td.colspan3 {
+	width: 244px;				/*  taille_cellule*3 + 2*17 */
+}
+
+#tableconcerts td.colspan4 {
+	width: 331px;				/*  taille_cellule*4 + 3*17 */
+}
+
+/**************
+	Groupes
+**************/
+
+#arrondi{
+	border-radius: 7px;
+}
+
+#titreGroupe{
+	padding-bottom: 8px;
+}
+
+#tableauRechercheGroupe{
+	margin-bottom : 10px;
+	text-align: center;
+	background-color: #a3cf62;
+	border-radius: 7px;
+}
+
+#tableauRechercheGroupe td{
+	padding-top : 10px;
+}
+
+#tableauRechercheGroupe td.span2{
+	padding-top : 2px;
+	padding-right : 8px;
+}
+
+#tableauRechercheGroupe td#rechercheDebut{
+	padding-left : 8px;
+}
+
+#tableauRechercheGroupe.visible-phone td{
+	padding-top : 5px;
+}
+
+#tableauRechercheGroupe.visible-phone input,select{
+	margin-bottom : 5px;
+	width: 100%;
+}
