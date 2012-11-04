@@ -8,16 +8,17 @@
 	<link rel="stylesheet" type="text/css" HREF="static/css\styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
-</head>
 
-<script src="static/js/jquery.js"></script>
-<script src="static/js/bootstrap.js"></script>  
-<script src="static/js/bootstrap.min.js"></script>  
-<script type="text/javascript" language="javascript" >
-    $(document).ready(function () {
-          $('.dropdown-toggle').dropdown();
-    }); 
- </script>
+
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/bootstrap.js"></script>  
+	<script src="static/js/bootstrap.min.js"></script>  
+	<script type="text/javascript" language="javascript" >
+		$(document).ready(function () {
+			  $('.dropdown-toggle').dropdown();
+		}); 
+	 </script>
+</head>
 
 <body>
 <div class="container">
@@ -65,61 +66,93 @@
 		</div>
 	</div>
 		
-	<div class="container" id="prog">
-		<table class="table table-bordered" id="tablescenes">
+	<div class="container prog" id="arrondi">
+		<!--------------------------------------- Pour ordinateurs --------------------------------------->
+		<table class="table table-striped nav hidden-phone" id="tablescenes">
+		<thead>
 			<tr>
-				<td>&nbsp;</td>
+				<th><select id="arrondi" style="vertical-align:bottom">
+							<option>Vendredi</option>
+							<option>Samedi</option>
+							<option>Dimanche</option>
+							<option>Lundi</option>
+						</select>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Salles des fêtes</td>
 			</tr>
 			<tr>
-				<td>Scène n°1</td>
+				<td>Chambre de commerce</td>
 			</tr>
 			<tr>
-				<td>Scène n°2</td>
+				<td>Scène de la République</td>
 			</tr>
 			<tr>
-				<td>Scène n°3</td>
+				<td>Kiosque à musique</td>
 			</tr>
-			<tr>
-				<td>Scène n°4</td>
-			</tr>
+		</tbody>
 		</table>
-		<div id="scrolling">
-			<table class="table table-bordered" id="tableconcerts">
+		<div id="scrolling" class="nav hidden-phone">
+		<table class="table  table-striped" id="tableconcerts">
 				<thead>
 				<tr>
 					<th>13h</th>
-					<th>13h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>14h</th>
-					<th>14h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>15h</th>
-					<th>15h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>16h</th>
-					<th>16h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>17h</th>
-					<th>17h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>18h</th>
-					<th>18h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>19h</th>
-					<th>19h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>20h</th>
-					<th>20h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>21h</th>
-					<th>21h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>22h</th>
-					<th>22h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>23h</th>
-					<th>23h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 					<th>00h</th>
-					<th>00h30</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
 				</tr>
-				</tdead>
+				</thead>
 				<tbody>
 					<tr>
-						<td>Moi</td>
-						<td class="colspan2">j'aime les</td>
-						<td class="colspan3">gateaux au chocolat,</td>
-						<td class="colspan4">et les oursons à la guimauve,</td>
+						<td class="dec">&nbsp;</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 mnouvelle">BIGBAND UTBM ET AVENTURE</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">ORCHESTRA DI MANDOLINI E CHITARRE IL PLETTRO</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">U.P ARCO UNIVERSITY OF THE PHILIPPINES STRING ORCHESTRA</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">LES HARMONIES PRINCE-DAVELUY</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre pluspetit">ENSEMBLE TROMBONE TUBA DU CONSERVATOIRE DE NANCY</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">ORCHESTRE DE GUITARES DE PROVENCE</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre pluspetit">AKKORDEONORCHESTER DER HARMONIKAFREUNDE LEONBERG/ELTINGEN</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="dec">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="colspan3" style="background-color : #00a3e6;">Conférence Maïf</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">TROMBOTEMPO</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">QUINTETO DE METAIS DE GAÏA</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
@@ -135,17 +168,132 @@
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
-						<td>mais</td>
-						<td>aussi</td>
-						<td>les</td>
-						<td>doushabao,</td>
-						<td>parce c'est trop bon</td>
+						<td class="dec">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">LOLOMIS</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">PANKISSI</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">ATTARAB</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">MESSAGERS DE BOULBINET</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">COLLA « LARRAIX »</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">DJATTA VSA DU MALI</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">EN PASSANT PAR LA MONTAGNE</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="dec">&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 autre">AGRUPACIO MUSICAL EPSA (AMESPA)</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">AVES BAND</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">TOUBOÔ</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">HYPERION</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 mactuelle">BLUES CHRONICLES</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">TUNA DEL DISTRITO UNIVERSITARIO DE GRANADA</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 jazz">A3 APULIA PROJECT</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--------------------------------------- Pour téléphones --------------------------------------->
+		<table class="table table-striped nav visible-phone" id="tablescenesphones">
+		<thead>
+			<tr>
+				<th><select id="arrondi" style="vertical-align:bottom; font-size:10px;padding-right:0px;padding-left:0px;">
+							<option>Vendredi</option>
+							<option>Samedi</option>
+							<option>Dimanche</option>
+							<option>Lundi</option>
+						</select>
+				</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Salles des fêtes</td>
+			</tr>
+			<tr>
+				<td>Chambre de commerce</td>
+			</tr>
+			<tr>
+				<td>Scène de la République</td>
+			</tr>
+			<tr>
+				<td>Kiosque à musique</td>
+			</tr>
+			</tbody>
+		</table>
+		<div id="scrollingphones" class="nav visible-phone">
+			<table class="table  table-striped" id="tableconcerts">
+				<thead>
+				<tr>
+					<th>13h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>14h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>15h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>16h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>17h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>18h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>19h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>20h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>21h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>22h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>23h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+					<th>00h</th>
+					<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="dec">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 mnouvelle">BIGBAND UTBM ET AVENTURE</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">ORCHESTRA DI MANDOLINI E CHITARRE IL PLETTRO</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">U.P ARCO UNIVERSITY OF THE PHILIPPINES STRING ORCHESTRA</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">LES HARMONIES PRINCE-DAVELUY</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre pluspetit">ENSEMBLE TROMBONE TUBA DU CONSERVATOIRE DE NANCY</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">ORCHESTRE DE GUITARES DE PROVENCE</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre pluspetit">AKKORDEONORCHESTER DER HARMONIKAFREUNDE LEONBERG/ELTINGEN</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="dec">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="colspan3" style="background-color : #00a3e6;">Conférence Maïf</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">TROMBOTEMPO</td>
+						<td>&nbsp;</td>
+						<td class="colspan2 autre">QUINTETO DE METAIS DE GAÏA</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
@@ -161,55 +309,41 @@
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
-						<td>Oui,</td>
-						<td>on</td>
-						<td>s'en</td>
-						<td>fout</td>
-						<td>mais</td>
+						<td class="dec">&nbsp;</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">LOLOMIS</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">PANKISSI</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">ATTARAB</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">MESSAGERS DE BOULBINET</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">COLLA « LARRAIX »</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">DJATTA VSA DU MALI</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="colspan2 jazz">EN PASSANT PAR LA MONTAGNE</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
-						<td>il</td>
-						<td>faut</td>
-						<td>meubler</td>
-						<td>les cases</td>
-						<td>vides</td>
+						<td class="dec">&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 autre">AGRUPACIO MUSICAL EPSA (AMESPA)</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">AVES BAND</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">TOUBOÔ</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 autre">HYPERION</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 mactuelle">BLUES CHRONICLES</td>
 						<td>&nbsp;</td>
+						<td class="colspan2 jazz">TUNA DEL DISTRITO UNIVERSITARIO DE GRANADA</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="colspan2 jazz">A3 APULIA PROJECT</td>
 						<td>&nbsp;</td>
 					</tr>
 				</tbody>
