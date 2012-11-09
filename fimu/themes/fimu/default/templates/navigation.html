@@ -1,0 +1,17 @@
+{% load mptt_tags %}
+				<ul class="nav">
+                    {% recursetree menu %}
+                    <li class="{% if page.lft >= node.lft and page.rght <= node.rght and page.tree_id == node.tree_id %}selected {% endif %}{% if node.draft %}draft{% endif %}{% if children %} dropdown{% endif %}">
+                        <a href="{{ node.get_absolute_url }}">{% firstof node.menu_title node.title %}
+                            {% if children %}
+							<b class="caret"></b>
+                            {% endif %}
+                        </a>
+                        {% if children %}
+                        <ul class="dropdown-menu">
+                            {{ children }}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endrecursetree %}
+				</ul>
