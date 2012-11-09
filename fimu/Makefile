@@ -20,6 +20,9 @@ cp_settings:
 dumpdata:
 	python manage.py dumpdata --natural --exclude=admin --exclude=contenttypes --exclude=auth --exclude=sessions --format yaml --indent=4 > fimu_data.yaml
 
+loaddata:
+	python loaddata fimu_data.yaml
+
 mail:
 	python -m smtpd -n -c DebuggingServer localhost:1025
 
@@ -36,3 +39,10 @@ test:
 # Deployment management
 collectstatic:
 	python manage.py collectstatic --noinput
+
+requirements:
+	pip freeze > requirements.txt
+
+upgrade:
+	pip install -r requirements.txt
+

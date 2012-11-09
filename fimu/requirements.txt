@@ -1,0 +1,22 @@
+Django==1.4.2
+Jinja2==2.6
+MySQL-python==1.2.4c1
+PIL==1.1.7
+PyYAML==3.10
+South==0.7.6
+URLObject==2.1.0
+argparse==1.2.1
+django-classy-tags==0.3.4.1
+django-floppyforms==1.0
+django-grappelli==2.4.2
+django-less==0.4
+django-mptt==0.5.4
+django-sekizai==0.6.1
+django-tinymce==1.5.1b2
+djangorestframework==0.4.0
+dnspython==1.10.0
+-e git://github.com/ionyse/ionyweb.git@a7594cc47e9e54f9d569f6845d5bf1f4e38b4c02#egg=ionyweb-dev
+python-magic==0.4.3
+requests==0.14.2
+wsgiref==0.1.2
+yolk==0.4.3
