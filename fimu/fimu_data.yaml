@@ -1,0 +1,314 @@
+-   fields: {domain: '127.0.0.1:8000', name: FIMU}
+    model: sites.site
+    pk: 1
+-   fields: {app_name: authentication, applied: !!timestamp '2012-10-26 10:36:36',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 1
+-   fields: {app_name: authentication, applied: !!timestamp '2012-10-26 10:36:36',
+        migration: 0002_auto__add_field_userprofile_file_manager_display_mode}
+    model: south.migrationhistory
+    pk: 2
+-   fields: {app_name: file_manager, applied: !!timestamp '2012-10-26 10:36:38', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 3
+-   fields: {app_name: website, applied: !!timestamp '2012-10-26 10:36:38', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 4
+-   fields: {app_name: website, applied: !!timestamp '2012-10-26 10:36:39', migration: 0002_auto__add_field_website_files_library__chg_field_website_domain}
+    model: south.migrationhistory
+    pk: 5
+-   fields: {app_name: website, applied: !!timestamp '2012-10-26 10:36:39', migration: 0003_auto__add_field_website_in_maintenance}
+    model: south.migrationhistory
+    pk: 6
+-   fields: {app_name: page, applied: !!timestamp '2012-10-26 10:36:40', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 7
+-   fields: {app_name: plugin, applied: !!timestamp '2012-10-26 10:36:40', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 8
+-   fields: {app_name: plugin, applied: !!timestamp '2012-10-26 10:36:40', migration: 0002_auto__del_websitepluginrelation__add_field_pluginrelation_display_on_n}
+    model: south.migrationhistory
+    pk: 9
+-   fields: {app_name: page_text, applied: !!timestamp '2012-10-26 10:36:41', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 10
+-   fields: {app_name: page_blog, applied: !!timestamp '2012-10-26 10:36:42', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 11
+-   fields: {app_name: page_redirect, applied: !!timestamp '2012-10-26 10:36:42',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 12
+-   fields: {app_name: plugin_text, applied: !!timestamp '2012-10-26 10:36:42', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 13
+-   fields: {app_name: plugin_text, applied: !!timestamp '2012-10-26 10:36:42', migration: 0002_auto__add_field_plugin_text_title__add_field_plugin_text_title_rule}
+    model: south.migrationhistory
+    pk: 14
+-   fields: {app_name: plugin_image, applied: !!timestamp '2012-10-26 10:36:42', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 15
+-   fields: {app_name: plugin_image, applied: !!timestamp '2012-10-26 10:36:43', migration: 0002_auto__add_field_plugin_image_alignment__chg_field_plugin_image_image}
+    model: south.migrationhistory
+    pk: 16
+-   fields: {app_name: plugin_image, applied: !!timestamp '2012-10-26 10:36:43', migration: 0003_auto__add_field_plugin_image_lightbox}
+    model: south.migrationhistory
+    pk: 17
+-   fields: {app_name: plugin_image, applied: !!timestamp '2012-10-26 10:36:43', migration: 0004_auto__add_field_plugin_image_title__add_field_plugin_image_title_rule}
+    model: south.migrationhistory
+    pk: 18
+-   fields: {app_name: plugin_video, applied: !!timestamp '2012-10-26 10:36:43', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 19
+-   fields: {app_name: plugin_video, applied: !!timestamp '2012-10-26 10:36:43', migration: 0002_auto__add_field_plugin_video_title_rule}
+    model: south.migrationhistory
+    pk: 20
+-   fields: {app_name: plugin_map, applied: !!timestamp '2012-10-26 10:36:44', migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 21
+-   fields: {app_name: plugin_map, applied: !!timestamp '2012-10-26 10:36:44', migration: 0002_auto__add_field_plugin_map_title__add_field_plugin_map_title_rule}
+    model: south.migrationhistory
+    pk: 22
+-   fields:
+        file_manager_display_mode: I
+        user: [admin]
+    model: authentication.userprofile
+    pk: 1
+-   fields: {level: 0, lft: 1, name: fimu, parent: null, rght: 6, tree_id: 1}
+    model: file_manager.directory
+    pk: 1
+-   fields: {level: 1, lft: 2, name: header, parent: 1, rght: 5, tree_id: 1}
+    model: file_manager.directory
+    pk: 2
+-   fields: {level: 2, lft: 3, name: accueil, parent: 2, rght: 4, tree_id: 1}
+    model: file_manager.directory
+    pk: 3
+-   fields: {root: 1}
+    model: file_manager.filemanager
+    pk: 1
+-   fields:
+        date_creation: 2012-11-09
+        date_modification: 2012-11-09
+        dir: 1
+        file_id: 1
+        file_type: [file_manager, image]
+        name: 02551_cuhabrook_1600x900.jpg
+        type: image/jpeg
+    model: file_manager.file
+    pk: 1
+-   fields:
+        date_creation: 2012-11-09
+        date_modification: 2012-11-09
+        dir: 2
+        file_id: 2
+        file_type: [file_manager, image]
+        name: header_fimu_2013.jpg
+        type: image/jpeg
+    model: file_manager.file
+    pk: 2
+-   fields:
+        date_creation: 2012-11-09
+        date_modification: 2012-11-09
+        dir: 3
+        file_id: 3
+        file_type: [file_manager, image]
+        name: banniere.jpg
+        type: image/jpeg
+    model: file_manager.file
+    pk: 3
+-   fields: {file: websites/fimu/storage/02551_cuhabrook_1600x900_1.jpg}
+    model: file_manager.image
+    pk: 1
+-   fields: {file: websites/fimu/storage/header_fimu_2013_2.jpg}
+    model: file_manager.image
+    pk: 2
+-   fields: {file: websites/fimu/storage/banniere_3.jpg}
+    model: file_manager.image
+    pk: 3
+-   fields:
+        analytics_key: null
+        default_layout: '100'
+        default_template: ''
+        domain: 1
+        files_library: 1
+        in_maintenance: false
+        logo: ''
+        main_menu_levels: 1
+        meta_description: ''
+        meta_keywords: ''
+        ndds: [1]
+        slug: fimu
+        theme: fimu
+        title: FIMU
+    model: website.website
+    pk: 1
+-   fields:
+        is_superuser: true
+        user: [admin]
+        website: 1
+    model: website.websiteowner
+    pk: 1
+-   fields:
+        app_page_id: 1
+        app_page_type: [page_text, pageapp_text]
+        default_template: ''
+        draft: false
+        is_diplayed_in_menu: true
+        last_modif: 2012-10-26
+        level: 0
+        lft: 1
+        menu_title: ''
+        meta_description: ''
+        meta_keywords: ''
+        parent: null
+        placeholder_slug: content-placeholder-1
+        plugin_order: 0
+        rght: 2
+        sha1: 42099b4af021e53fd8fd4e056c2568d7c2e3ffa8
+        slug: ''
+        title: Accueil
+        tree_id: 1
+        website: 1
+    model: page.page
+    pk: 1
+-   fields:
+        app_page_id: 2
+        app_page_type: [page_text, pageapp_text]
+        default_template: ''
+        draft: false
+        is_diplayed_in_menu: true
+        last_modif: 2012-11-09
+        level: 0
+        lft: 1
+        menu_title: ''
+        meta_description: ''
+        meta_keywords: ''
+        parent: null
+        placeholder_slug: content-placeholder-2
+        plugin_order: 0
+        rght: 2
+        sha1: 626992c08a984cbb85ff34e5faa60d495e882b61
+        slug: groupe
+        title: Groupe
+        tree_id: 2
+        website: 1
+    model: page.page
+    pk: 2
+-   fields:
+        related_object_id: 2
+        related_object_type: [page, page]
+        slug: content
+        template: 33-66
+    model: page.layout
+    pk: 1
+-   fields:
+        related_object_id: 1
+        related_object_type: [website, website]
+        slug: footer
+        template: '100'
+    model: page.layout
+    pk: 2
+-   fields:
+        content_type: [plugin_text, plugin_text]
+        display_on_new_pages: true
+        object_id: 1
+        pages: [1, 2]
+        placeholder_slug: footer-placeholder-1
+        plugin_order: 0
+    model: plugin.pluginrelation
+    pk: 3
+-   fields:
+        content_type: [plugin_image, plugin_image]
+        display_on_new_pages: true
+        object_id: 1
+        pages: [1, 2]
+        placeholder_slug: header-placeholder-1
+        plugin_order: 10
+    model: plugin.pluginrelation
+    pk: 1
+-   fields:
+        content_type: [plugin_image, plugin_image]
+        display_on_new_pages: false
+        object_id: 3
+        pages: [2]
+        placeholder_slug: content-placeholder-1
+        plugin_order: 10
+    model: plugin.pluginrelation
+    pk: 5
+-   fields:
+        content_type: [plugin_text, plugin_text]
+        display_on_new_pages: true
+        object_id: 2
+        pages: [1, 2]
+        placeholder_slug: footer-placeholder-1
+        plugin_order: 10
+    model: plugin.pluginrelation
+    pk: 4
+-   fields: {text: ''}
+    model: page_text.pageapp_text
+    pk: 1
+-   fields: {text: "<h2>Titre</h2>\r\n<p class=\"text\">Lorem ipsum dolor sit amet,\
+            \ consectetur adipiscing elit. In vel tellus dui. Nullam consequat ipsum\
+            \ ut mauris interdum auctor. Maecenas lobortis, turpis porta vestibulum\
+            \ ornare, arcu lectus ultrices sem, ut feugiat quam dui vel lorem. Pellentesque\
+            \ rhoncus rutrum enim vel blandit. Curabitur sed magna eget velit bibendum\
+            \ aliquam. Suspendisse ut ante consequat sapien cursus hendrerit ut non\
+            \ libero. Duis vestibulum justo ultrices ante tristique ut sollicitudin\
+            \ elit tincidunt. Donec ac arcu leo. Pellentesque blandit nisi vel nibh\
+            \ consequat vestibulum. Suspendisse posuere, eros nec facilisis tristique,\
+            \ purus augue elementum dolor, a accumsan dolor risus aliquet elit. Nunc\
+            \ hendrerit nulla lorem, vitae eleifend magna. Sed aliquam est vel orci\
+            \ iaculis blandit. Mauris commodo, odio at pretium bibendum, diam nibh\
+            \ semper leo, sit amet blandit enim est semper ligula. Maecenas gravida\
+            \ nisl sapien. Nunc augue massa, iaculis nec tristique sed, scelerisque\
+            \ a eros. Morbi turpis magna, fermentum in adipiscing a, porttitor vitae\
+            \ dui. Pellentesque est risus, volutpat et convallis eget, luctus ac ante.\
+            \ Nam interdum tristique leo in tristique. Class aptent taciti sociosqu\
+            \ ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent\
+            \ vel ante quam, nec porttitor urna. Sed at dui in erat laoreet euismod.\
+            \ Curabitur lectus ipsum, sagittis a aliquam vitae, rhoncus a orci. Ut\
+            \ felis augue, laoreet sit amet ornare ullamcorper, porta sit amet purus.\
+            \ Praesent tincidunt mauris dui, ut lacinia lectus. Sed sit amet lorem\
+            \ sit amet massa sodales ultricies. Ut non tortor id leo laoreet imperdiet.\
+            \ Phasellus aliquam orci ac tortor ultricies a molestie sapien pulvinar.\
+            \ Donec malesuada nisi facilisis turpis luctus sed sodales nisi sagittis.\
+            \ Maecenas consequat molestie urna, vel lacinia felis ornare sed. Suspendisse\
+            \ potenti. Phasellus venenatis commodo libero quis dapibus. In tempor\
+            \ lorem eu nisi gravida vulputate. Praesent nec odio augue. Aliquam porttitor\
+            \ velit a odio faucibus porta. Quisque magna massa, mollis eu cursus ut,\
+            \ suscipit in erat. Morbi mollis consequat felis, non cursus nisl dictum\
+            \ at. Donec nec pharetra arcu. Cras gravida consectetur diam, consequat\
+            \ placerat erat pharetra eu. Quisque auctor fermentum neque ultrices hendrerit.\
+            \ Phasellus mauris erat, posuere quis suscipit sed, mollis eget velit.\
+            \ Suspendisse potenti.</p>"}
+    model: page_text.pageapp_text
+    pk: 2
+-   fields: {text: "<p>&nbsp;</p>\r\n<!-- pour l'ordi -->\r\n<div class=\"link hidden-phone\
+            \ center\">\r\n<div id=\"module\" class=\"span3\">\r\n<h4>Lien Facebook</h4>\r\
+            \n<button class=\"btn btn-large btn-primary\" type=\"button\">Rejoignez-nous\
+            \ !</button></div>\r\n<div id=\"module\" class=\"span3\">\r\n<h4>Lien\
+            \ Twitter</h4>\r\n<button class=\"btn btn-large btn btn-info\" type=\"\
+            button\">Suivez-nous !</button></div>\r\n<div id=\"module\" class=\"span3\"\
+            >\r\n<h4>Jeu-concours</h4>\r\n<button class=\"btn btn-large btn btn-success\"\
+            \ type=\"button\">Participez !</button></div>\r\n</div>\r\n<!-- pour mobile\
+            \ -->\r\n<div class=\"link visible-phone\"><button class=\"btn btn-large\
+            \ btn-primary\" type=\"button\">Facebook</button> <button class=\"btn\
+            \ btn-large btn-info\" type=\"button\">Twitter</button> <button class=\"\
+            btn btn-large btn-success\" type=\"button\">Jeu-concours</button></div>",
+        title: '', title_rule: true}
+    model: plugin_text.plugin_text
+    pk: 1
+-   fields: {text: '<p style="text-align: center;">Info | Numero tel | contact mail
+            | etc...</p>', title: '', title_rule: true}
+    model: plugin_text.plugin_text
+    pk: 2
+-   fields: {alignment: C, description: Affiche de promotion fimu 2013, height: null,
+        image: 'http://localhost:8000/_medias/websites/fimu/storage/header_fimu_2013_2.jpg',
+        lightbox: false, title: '', title_rule: true, width: null}
+    model: plugin_image.plugin_image
+    pk: 1
+-   fields: {alignment: R, description: '', height: 504, image: 'http://localhost:8000/_medias/websites/fimu/storage/banniere_3.jpg',
+        lightbox: true, title: '', title_rule: true, width: null}
+    model: plugin_image.plugin_image
+    pk: 3
