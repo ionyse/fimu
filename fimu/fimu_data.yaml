@@ -1,6 +1,9 @@
 -   fields: {domain: '127.0.0.1:8000', name: FIMU}
     model: sites.site
     pk: 1
+-   fields: {domain: 'localhost:8000', name: ''}
+    model: sites.site
+    pk: 2
 -   fields: {app_name: authentication, applied: !!timestamp '2012-10-26 10:36:36',
         migration: 0001_initial}
     model: south.migrationhistory
@@ -130,14 +133,14 @@
         analytics_key: null
         default_layout: '100'
         default_template: ''
-        domain: 1
+        domain: 2
         files_library: 1
         in_maintenance: false
         logo: ''
         main_menu_levels: 1
         meta_description: ''
         meta_keywords: ''
-        ndds: [1]
+        ndds: [1, 2]
         slug: fimu
         theme: fimu
         title: FIMU
@@ -228,15 +231,6 @@
     model: plugin.pluginrelation
     pk: 1
 -   fields:
-        content_type: [plugin_image, plugin_image]
-        display_on_new_pages: false
-        object_id: 3
-        pages: [2]
-        placeholder_slug: content-placeholder-1
-        plugin_order: 10
-    model: plugin.pluginrelation
-    pk: 5
--   fields:
         content_type: [plugin_text, plugin_text]
         display_on_new_pages: true
         object_id: 2
@@ -245,6 +239,15 @@
         plugin_order: 10
     model: plugin.pluginrelation
     pk: 4
+-   fields:
+        content_type: [plugin_image, plugin_image]
+        display_on_new_pages: false
+        object_id: 3
+        pages: [2]
+        placeholder_slug: content-placeholder-1
+        plugin_order: 10
+    model: plugin.pluginrelation
+    pk: 5
 -   fields: {text: ''}
     model: page_text.pageapp_text
     pk: 1

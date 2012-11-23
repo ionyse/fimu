@@ -21,7 +21,7 @@ dumpdata:
 	python manage.py dumpdata --natural --exclude=admin --exclude=contenttypes --exclude=auth --exclude=sessions --format yaml --indent=4 > fimu_data.yaml
 
 loaddata:
-	python loaddata fimu_data.yaml
+	python manage.py loaddata fimu_data.yaml
 
 mail:
 	python -m smtpd -n -c DebuggingServer localhost:1025
@@ -29,8 +29,8 @@ mail:
 syncdb:
 	python manage.py flushwebsite
 	python manage.py syncdb --noinput --migrate
-	python manage.py loaddata fimu_data.yaml
 	python manage.py createsuperuser
+	python manage.py loaddata fimu_data.yaml
 
 # Testing suite
 test:
