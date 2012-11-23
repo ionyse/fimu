@@ -109,6 +109,7 @@ INSTALLED_APPS += (
     'ionyweb.page_app.page_text',
     'ionyweb.page_app.page_blog',
     'ionyweb.page_app.page_redirect',
+    'fimu.page_group',
     # Plugins
     'ionyweb.plugin_app.plugin_text',
     'ionyweb.plugin_app.plugin_image',

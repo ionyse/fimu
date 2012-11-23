@@ -1,0 +1,8 @@
+<h1>My list of groups</h1>
+<ul>
+    {% for group in object.groups.all %}
+    <li>{{ group }}</li>
+    {% empty %}
+    <li>No groups yet</li>
+    {% endfor %}
+</ul>
