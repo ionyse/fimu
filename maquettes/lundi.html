@@ -1,0 +1,278 @@
+﻿<!--------------------------------------- Pour ordinateurs --------------------------------------->
+<table class="table table-striped nav hidden-phone" id="tablescenes">
+	<thead>
+		<tr>
+			<th>
+				<select id="ajaxmenu" style="vertical-align:bottom" onchange="ajaxcombo('ajaxmenu', 'planning')">
+					<option value="vendredi.html">Vendredi</option>
+					<option value="samedi.html">Samedi</option>
+					<option value="dimanche.html">Dimanche</option>
+					<option selected value="lundi.html">Lundi</option>
+				</select>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Salles des fêtes</td>
+		</tr>
+		<tr>
+			<td>Chambre de commerce</td>
+		</tr>
+		<tr>
+			<td>Scène de la République</td>
+		</tr>
+		<tr>
+			<td>Kiosque à musique</td>
+		</tr>
+	</tbody>
+</table>
+<div id="scrolling" class="nav hidden-phone">
+	<table class="table  table-striped" id="tableconcerts">
+		<thead>
+			<tr>
+				<th>13h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>14h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>15h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>16h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>17h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>18h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>19h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>20h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>21h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>22h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>23h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>00h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="dec colspan2 autre">Hum-hum :</td>
+				<td class="colspan2 autre">Some men</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">see things</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">as they are</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">and say why.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">I dream</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">things that</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">never were</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">and</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">say</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">why not</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3 mactuelle">J'espère que le FIMU 2013</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">sera génial.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">... et qu'on pourra y aller.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">Vivement que l'hiver</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">se termine et qu'on retrouve</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">des températures décentes -_-'</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">ploum ploum ploum ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3 autre">Fiou, c'est long te trouver n'importe quoi</td>
+				<td class="colspan3 autre">à écrire pour tester tout ça ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Lorem</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">ipsum</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">etc ...</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">toto aime les gateaux</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">et moi aussi :)</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!--------------------------------------- Pour téléphones --------------------------------------->
+<table class="table table-striped nav visible-phone" id="tablescenesphones">
+	<thead>
+		<tr>
+			<th>
+				<select id="ajaxmenuphone" style="vertical-align:bottom" onchange="ajaxcombo('ajaxmenuphone', 'planning')">
+					<option value="vendredi.html">Vendredi</option>
+					<option value="samedi.html">Samedi</option>
+					<option value="dimanche.html">Dimanche</option>
+					<option selected value="lundi.html">Lundi</option>
+				</select>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Salles des fêtes</td>
+		</tr>
+		<tr>
+			<td>Chambre de commerce</td>
+		</tr>
+		<tr>
+			<td>Scène de la République</td>
+		</tr>
+		<tr>
+			<td>Kiosque à musique</td>
+		</tr>
+	</tbody>
+</table>
+<div id="scrollingphones" class="nav visible-phone">
+	<table class="table  table-striped" id="tableconcerts">
+		<thead>
+			<tr>
+				<th>13h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>14h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>15h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>16h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>17h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>18h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>19h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>20h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>21h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>22h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>23h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>00h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="dec colspan2 autre">Hum-hum :</td>
+				<td class="colspan2 autre">Some men</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">see things</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">as they are</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">and say why.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">I dream</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">things that</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">never were</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">and</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">say</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">why not</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3 mactuelle">J'espère que le FIMU 2013</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">sera génial.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">... et qu'on pourra y aller.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">Vivement que l'hiver</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">se termine et qu'on retrouve</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">des températures décentes -_-'</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">ploum ploum ploum ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3 autre">Fiou, c'est long te trouver n'importe quoi</td>
+				<td class="colspan3 autre">à écrire pour tester tout ça ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Lorem</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">ipsum</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">etc ...</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">toto aime les gateaux</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">et moi aussi :)</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

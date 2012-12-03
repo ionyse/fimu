@@ -1,0 +1,278 @@
+﻿<!--------------------------------------- Pour ordinateurs --------------------------------------->
+<table class="table table-striped nav hidden-phone" id="tablescenes">
+	<thead>
+		<tr>
+			<th>
+				<select id="ajaxmenu" style="vertical-align:bottom" onchange="ajaxcombo('ajaxmenu', 'planning')">
+					<option value="vendredi.html">Vendredi</option>
+					<option selected value="samedi.html">Samedi</option>
+					<option value="dimanche.html">Dimanche</option>
+					<option value="lundi.html">Lundi</option>
+				</select>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Salles des fêtes</td>
+		</tr>
+		<tr>
+			<td>Chambre de commerce</td>
+		</tr>
+		<tr>
+			<td>Scène de la République</td>
+		</tr>
+		<tr>
+			<td>Kiosque à musique</td>
+		</tr>
+	</tbody>
+</table>
+<div id="scrolling" class="nav hidden-phone">
+	<table class="table  table-striped" id="tableconcerts">
+		<thead>
+			<tr>
+				<th>13h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>14h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>15h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>16h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>17h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>18h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>19h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>20h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>21h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>22h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>23h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>00h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan2 jazz">ça c'est</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">les concerts</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">du samedi,</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">et c'est fait</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">en Ajax</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">et c'est cool</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz pluspetit">parce que Ajax c'est relou ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3" style="background-color : #00a3e6;">Couleur définie par balise 'style'</td>
+				<td>&nbsp;</td>
+				<td class="colspan3 mclassique">Chapi chapo</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mclassique">pitipo</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec colspan2 autre">(vide) ou presque ...</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Maitre corbeau</td>
+				<td class="colspan2 autre">sur un arbre perché</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">tenait en son bec</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">un fromage.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Maitre renard,</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">par l'odeur alléché,</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">lui tint à peu près ce langage</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">I walk a lonely road</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">The only one</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle pluspetit">that I have ever known.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Don't know where</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">it goes</td>
+				<td class="colspan2 autre">but it's home to me</td>
+				<td class="colspan2 mactuelle">and I walk alone</td>
+				<td class="colspan2 mactuelle pluspetit">ah-ah, ah-ah, ah-ha, ah-aaah</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!--------------------------------------- Pour téléphones --------------------------------------->
+<table class="table table-striped nav visible-phone" id="tablescenesphones">
+	<thead>
+		<tr>
+			<th>
+				<select id="ajaxmenuphone" style="vertical-align:bottom" onchange="ajaxcombo('ajaxmenuphone', 'planning')">
+					<option value="vendredi.html">Vendredi</option>
+					<option selected value="samedi.html">Samedi</option>
+					<option value="dimanche.html">Dimanche</option>
+					<option value="lundi.html">Lundi</option>
+				</select>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Salles des fêtes</td>
+		</tr>
+		<tr>
+			<td>Chambre de commerce</td>
+		</tr>
+		<tr>
+			<td>Scène de la République</td>
+		</tr>
+		<tr>
+			<td>Kiosque à musique</td>
+		</tr>
+	</tbody>
+</table>
+<div id="scrollingphones" class="nav visible-phone">
+	<table class="table  table-striped" id="tableconcerts">
+		<thead>
+			<tr>
+				<th>13h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>14h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>15h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>16h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>17h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>18h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>19h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>20h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>21h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>22h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>23h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+				<th>00h</th>
+				<th class="demiheure">&nbsp;&nbsp;&nbsp;|</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan2 jazz">ça c'est</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">les concerts</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">du samedi,</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">et c'est fait</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">en Ajax</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz">et c'est cool</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 jazz pluspetit">parce que Ajax c'est relou ...</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td class="colspan3" style="background-color : #00a3e6;">Couleur définie par balise 'style'</td>
+				<td>&nbsp;</td>
+				<td class="colspan3 mclassique">Chapi chapo</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mclassique">pitipo</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec colspan2 autre">(vide) ou presque ...</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Maitre corbeau</td>
+				<td class="colspan2 autre">sur un arbre perché</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">tenait en son bec</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">un fromage.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Maitre renard,</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">par l'odeur alléché,</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">lui tint à peu près ce langage</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="dec">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">I walk a lonely road</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">The only one</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle pluspetit">that I have ever known.</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 autre">Don't know where</td>
+				<td>&nbsp;</td>
+				<td class="colspan2 mactuelle">it goes</td>
+				<td class="colspan2 autre">but it's home to me</td>
+				<td class="colspan2 mactuelle">and I walk alone</td>
+				<td class="colspan2 mactuelle pluspetit">ah-ah, ah-ah, ah-ha, ah-aaah</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
